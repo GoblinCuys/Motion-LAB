@@ -1,0 +1,16 @@
+program segitiga
+
+kamus 
+    s1, s2, s3 : integer
+
+algoritma 
+    input(s1, s2, s3)
+    if (s1 == s2) AND (s2 == s3) then
+        output("Segitiga Sama Sisi")
+    else if (s1 == s2) OR (s1 == s3) OR (s2 == s3) then
+        output("Segitiga Sama Kaki")
+    else
+        output("Segitiga Sembarang")
+    endif
+
+endprogram

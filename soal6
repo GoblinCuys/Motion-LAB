@@ -1,0 +1,22 @@
+program nilai_huruf
+
+kamus
+    huruf : string
+
+algoritma
+    input(huruf)
+    if huruf == "A" then
+        output(5)
+    else if huruf == "B" then 
+		output(4)
+	else if huruf == "C" then 
+		output(3)
+	else if huruf == "D" then
+		output(2)
+	else if huruf == "E" then
+		output(1)
+	else if huruf == "T" then
+		output(0)
+	endif
+	
+endprogram

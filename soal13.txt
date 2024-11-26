@@ -1,0 +1,32 @@
+program ganjil_genap
+
+kamus
+	a, b, c, d, genap, ganjil : integer
+	
+algoritma
+	input(a, b, c, d)
+	
+	if a MOD 2 == 0 then
+		output(genap = genap + 1)
+	else 
+		output(ganjil = ganjil + 1)
+	
+	if b MOD 2 == 0 then
+		output(genap = genap + 1)
+	else 
+		output(ganjil = ganjil + 1)
+		
+	if c MOD 2 == 0 then
+		output(genap = genap + 1)
+	else 
+		output(ganjil = ganjil + 1)
+		
+	if d MOD 2 == 0 then
+		output(genap = genap + 1)	
+	else 
+		output(ganjil = ganjil + 1)
+	
+	endif
+	output(genap, ganjil)
+
+endprogram

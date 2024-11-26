@@ -1,0 +1,25 @@
+program belanja
+
+kamus 
+    belanja, tot : integer
+    bersedia, kartu, diskon, cashback : boolean
+
+algoritma
+    input(belanja, bersedia)
+    if belanja >= 100000 then
+        diskon = true
+        tot = belanja - (belanja * 10 / 100)
+    else 
+        tot = belanja
+    endif
+    if bersedia == true AND belanja >= 200000 then
+        kartu = true
+        cashback = true
+        tot = tot - 75000
+    endif
+    output("Kartu? ", kartu)
+    output("Diskon? ", diskon)
+    output("Cashback? ", cashback)
+    output("Rp. ", tot)
+
+endprogram

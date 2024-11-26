@@ -1,0 +1,14 @@
+program zat_radioaktif
+
+kamus
+    bil1, bil2, bil3, bil4, bil5 : real
+
+algoritma
+    input(bil1, bil2, bil3, bil4, bil5)
+    if (bil1 < bil2 AND bil2 < bil3 AND bil3 < bil4 AND bil4 < bil5) OR  (bil1 > bil2 AND bil2 > bil3 AND bil3 > bil4 AND bil4 > bil5) then
+        output("Stabil naik/turun")
+    else 
+        output("Tidak stabil")
+    endif
+
+endprogram

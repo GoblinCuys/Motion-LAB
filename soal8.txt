@@ -1,0 +1,14 @@
+program segitilu
+
+kamus
+	a, b, c : integer
+
+algoritma
+	input(a, b, c)
+	if (a + b + c) == 180 then
+		output("true")
+	else 
+		output("false")
+	endif
+	
+endprogram

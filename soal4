@@ -1,0 +1,26 @@
+program parkir
+
+kamus
+    h1, m1, h2, m2, jam, menit : integer
+    mAwal, mAkhir, durasiMenit : integer
+
+algoritma
+    input(h1, m1, h2, m2)
+    mAwal = h1*60 + m1
+    mAkhir = h2*60 + m2
+    
+    if h2 < h1 then
+        mAkhir = (h2+12)*60 + m2
+        durasiMenit = mAkhir - mAwal
+    else if (h1 == h2) AND (m2 < m1) then
+        mAkhir = (h2+12)*60 + m2
+        durasiMenit = mAkhir - mAwal
+    else
+        durasiMenit = mAkhir - mAwal
+    endif
+    
+    jam = durasiMenit / 60
+    menit = durasiMenit % 60
+    output(jam, "jam", menit, "menit")
+
+endprogram
